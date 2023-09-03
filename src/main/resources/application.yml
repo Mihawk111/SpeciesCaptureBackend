@@ -1,0 +1,15 @@
+species-capture-app:
+    mongo:
+        database-name: '5_species_classification'
+        database-url: 'mongodb://localhost:27017/5_species_classification'
+        pool-max-size: 20
+        pool-min-size: 5
+        databases:
+            species:
+                collection: 'species'
+#                username: 'lol'
+#                password: 'lol'
+            contribution:
+                collection: 'contribution'
+#                username: 'lol'
+#                password: 'lol'
