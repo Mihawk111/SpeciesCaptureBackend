@@ -54,8 +54,6 @@ public class SpeciesMongoRepository implements SpeciesRepository {
     @Override
     public boolean updateSpecies(Species species) {
         Species foundSpecies = getSpeciesByScientificName(species.getScientificName());
-        System.out.println("Received: " + species);
-        System.out.println("Found: " + foundSpecies);
         if(foundSpecies != null && !foundSpecies.getId().equals(species.getId())) return false;
         
         try {
